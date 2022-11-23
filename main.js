@@ -2,9 +2,10 @@ const input = 'Welcome';
 const vowels = ['a', 'e', 'i', 'o', 'u'];
 const resultArray = [];
 
-for (let i = 0; i < vowels.length; i++) {
-    //console.log(vowels[i]);
+for (let i = 0; i < input.length; i++) {
     for (let j = 0; j <vowels.length; j++) {
-        console.log(j);
-      }
+      if (input[i] === vowels[j]) {
+        console.log(vowels[j]);
+      }  
+    }
   }
